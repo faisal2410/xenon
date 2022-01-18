@@ -1,0 +1,115 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    line-height: 24px;
+    color: #333;
+}
+a{
+    color:#333;
+    text-decoration: none;
+    transition:0.3s;
+}
+/* Button css */
+.box-btn{
+    position: relative;
+    background-color: #ff3636;
+    color:#fff;
+    display: inline-block;
+    text-transform: capitalize;
+    padding:10px 30px;   
+    font-size:18px;
+    font-weight: 500;
+    transition:0.3s;
+}
+.box-btn:hover{
+    background-color: #333;
+    color:#fff;
+}
+.box-btn i{
+    position:absolute;
+    top:14px;
+    left:3px;
+    transition: 0.3s;
+    opacity: 0;
+    visibility:hidden;
+}
+.box-btn:hover i{
+    left:9px;
+    opacity: 1;
+    visibility: visible;
+}
+/* Header Area CSS */
+.header-area{
+    position:fixed;
+    left:0;
+    right:0;
+    z-index: 999;  
+    padding:20px 0;
+}
+.header-area .navbar-brand{
+    font-size:30px;
+    border:1px solid #fff;
+    padding:10px 20px;
+    font-weight:700;
+}
+.header-area a{
+    color: #fff !important;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size:15px;
+
+}
+.navbar-nav li a:hover{
+    color: tomato!important;
+}
+/* Banner CSS */
+.banner-area{
+    position:relative;
+    /* z-index:2; */
+    height:100vh;
+}
+.banner-area:before{
+    position:absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    opacity: 0.6;
+    z-index: -1;
+}
+.banner-content{
+    position:absolute;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    text-align: center;
+    width: 100%;
+}
+.banner-content h1{
+    text-transform:uppercase;
+    font-weight: 700;
+    font-size:80px;
+}
+.banner-content p{
+    text-transform:capitalize;
+    font-size:24px;
+}
+
+.banner-content a{
+    margin-top: 25px;
+}
+.banner-area video{
+    position:absolute;
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+   object-fit: cover;
+   z-index: -2;
+}
