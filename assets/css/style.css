@@ -14,6 +14,13 @@ a{
     text-decoration: none;
     transition:0.3s;
 }
+/* Margin & Padding */
+.pt-80{
+    padding-top:80px;
+}
+.pb-80{
+    padding-bottom:80px;
+}
 /* Button css */
 .box-btn{
     position: relative;
@@ -112,4 +119,19 @@ a{
     width:100%;
    object-fit: cover;
    z-index: -2;
+}
+
+/* About Area css */
+.about-content h4 {
+    color: #ff3636;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.about-content h5 {
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+.about-content ul {
+    list-style: none;
 }
