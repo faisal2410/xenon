@@ -14,12 +14,48 @@ a{
     text-decoration: none;
     transition:0.3s;
 }
+
 /* Margin & Padding */
 .pt-80{
     padding-top:80px;
 }
 .pb-80{
     padding-bottom:80px;
+}
+/* Section-title CSS */
+.section-title {
+    text-align: center;
+    margin-bottom:80px;
+}
+.section-title h2 {
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: capitalize;
+    display: inline-block;
+    position: relative;
+    padding-bottom:15px;
+    margin-bottom: 15px;
+}
+.section-title h2:before {
+    content: "";
+    width: 100px;
+    position: absolute;
+    height: 2px;
+    background-color: #ff3636;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.section-title h2:after {
+    content: "";
+    background-color: #ff3636;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
 }
 /* Button css */
 .box-btn{
@@ -135,3 +171,44 @@ a{
 .about-content ul {
     list-style: none;
 }
+/* Services-Area CSS */
+.services-area {
+    background-color: #f6f6f6;
+}
+.single-service {
+    text-align: center;
+    background-color: #fff;
+    padding: 40px 20px;
+    border: 1px solid #f2f2f2;
+    margin-top: 30px;
+    position: relative;
+}
+.single-service span {
+    position: absolute;
+    left: 4px;
+    top: 16px;
+    color: #f2f2f2;
+    font-size: 70px;
+    font-family: 'Poppins';
+    font-weight: 700;
+}
+.single-service i {
+    background-color: #ff3636;
+    color: #fff;
+    font-size: 25px;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    line-height: 50px;
+    transition:0.3s;
+}
+.single-service i:hover{
+    border-radius: 50%;
+}
+.single-service h4 {
+    margin: 15px 0;
+    text-transform: capitalize;
+    font-size: 30px;
+    font-weight: 700;
+}
+
